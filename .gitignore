@@ -2,5 +2,9 @@ node_modules/
 bower_components/
 *.log
 
+# -Brian: ignore folder where compiled Angular app will be, because can always be re-compiled 
+/public/js 
+
 build/
 dist/
+
