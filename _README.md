@@ -1,3 +1,5 @@
+//Hello Soloistss
+
 # Project Name
 
 > Pithy project description
@@ -6,7 +8,7 @@
 
   - __Product Owner__: teamMember
   - __Scrum Master__: teamMember
-  - __Development Team Members__: teamMember, teamMember
+  - __Development Team Members__: Jason, Dianna, Shak, Brian, Fan Death.
 
 ## Table of Contents
 
