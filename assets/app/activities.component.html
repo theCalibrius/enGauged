@@ -1,0 +1,7 @@
+<div>
+  <h3>ACTIVITIES COMPONENT</h3>
+  <br>
+    <category-selector (onCategoryChange)="onCategoryChange($event)" [pageName]="pageName"></category-selector>
+    <br>
+    <activities-page-content-component [categoryName]="categoryName"></activities-page-content-component>
+</div>

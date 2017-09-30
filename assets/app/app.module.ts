@@ -28,6 +28,9 @@ import { ContentComponent } from './content.component';
 import { ContentPageContentComponent } from './contentPageContent.component';
 import { CategoryFilterPipe } from './filter-by-category.pipe';
 import { CategoryNameDirective } from './categoryName.directive';
+import { ActivitiesComponent } from './activities.component';
+import { ActivitiesPageContentComponent  } from './activitiesPageContent.component';
+
 
 
 @NgModule({
@@ -51,7 +54,9 @@ import { CategoryNameDirective } from './categoryName.directive';
         ContentComponent,
         ContentPageContentComponent,
         CategoryFilterPipe,
-        CategoryNameDirective
+        CategoryNameDirective,
+        ActivitiesComponent,
+        ActivitiesPageContentComponent
     ],
     imports: [
         BrowserModule,
