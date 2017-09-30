@@ -22,6 +22,8 @@ import { AuthenticationPageComponent } from "./auth/authenticationPage.component
 
 import { ProfileComponent } from './profile.component';
 import { PageNameDirective } from './header.directive';
+import { TrackerComponent } from './tracker.component';
+import { CategorySelectorComponent } from './categorySelector.component';
 
 @NgModule({
     declarations: [
@@ -38,7 +40,9 @@ import { PageNameDirective } from './header.directive';
         ErrorComponent,
         AuthenticationPageComponent,
         ProfileComponent,
-        PageNameDirective
+        PageNameDirective,
+        TrackerComponent,
+        CategorySelectorComponent
     ],
     imports: [
         BrowserModule,
