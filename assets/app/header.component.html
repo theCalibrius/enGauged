@@ -1,0 +1,19 @@
+<div class ="btn-group btn-group-justified" role="group" aria-label="...">
+	
+	<div *ngFor="let page of pages" class="btn-group" role="group" >
+	  <button [pageName]="page.name" (click)="handleClick(page.name)" type="button"  class="btn btn-danger">
+	  <span class="glyphicon {{page.glyph}}" aria-hidden="true"></span> {{page.label}}
+	  </button>
+    </div>
+
+</div>
+
+
+
+<!-- 
+
+ [pageName] above is a custom directive found in header.directive.ts
+ It must be declared and imported in app.module.ts in order to work
+ It allows us to grabe the page.name property of current page's button and pass to the handleClick function on (click) event
+ 
+ -->

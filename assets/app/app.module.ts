@@ -20,6 +20,9 @@ import { ErrorService } from "./errors/error.service";
 import { AuthGuard } from "./auth/auth-guard.service";
 import { AuthenticationPageComponent } from "./auth/authenticationPage.component";
 
+import { ProfileComponent } from './profile.component';
+import { PageNameDirective } from './header.directive';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -33,7 +36,9 @@ import { AuthenticationPageComponent } from "./auth/authenticationPage.component
         SignupComponent,
         SigninComponent,
         ErrorComponent,
-        AuthenticationPageComponent
+        AuthenticationPageComponent,
+        ProfileComponent,
+        PageNameDirective
     ],
     imports: [
         BrowserModule,
