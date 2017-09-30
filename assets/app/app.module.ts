@@ -32,6 +32,7 @@ import { ActivitiesComponent } from './activities.component';
 import { ActivitiesPageContentComponent  } from './activitiesPageContent.component';
 import { QuestionComponent} from './question.component';
 import { QuestionsComponent} from './questions.component';
+import { RelationshipsSectionComponent} from './relationshipsSection.component';
 
 
 
@@ -61,7 +62,10 @@ import { QuestionsComponent} from './questions.component';
         ActivitiesComponent,
         ActivitiesPageContentComponent,
         QuestionComponent,
-        QuestionsComponent
+        QuestionsComponent,
+        RelationshipsSectionComponent
+        
+
     ],
     imports: [
         BrowserModule,
@@ -69,6 +73,9 @@ import { QuestionsComponent} from './questions.component';
         routing,
         ReactiveFormsModule,
         HttpModule
+        
+
+        
     ],
     providers: [AuthService, ErrorService, AuthGuard],
     bootstrap: [AppComponent]

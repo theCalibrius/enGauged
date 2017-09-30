@@ -29,17 +29,17 @@ export class QuestionsComponent {
     },
     {
         thumbnail: 'https://static.pexels.com/photos/349494/pexels-photo-349494.jpeg',
-        category: 'About You',
+        category: 'About Relationship',
         title: "Do you think your partner would be happier if you weren't together?",
     },
     {
         thumbnail: 'https://static.pexels.com/photos/594226/pexels-photo-594226.jpeg',
-        category: 'About You',
+        category: 'About Relationship',
         title: "Do you think you would be happier if you and your partner weren't together?",
     },
         {
         thumbnail: 'https://static.pexels.com/photos/220836/pexels-photo-220836.jpeg',
-        category: 'About You',
+        category: 'About Relationship',
         title: 'Do you want to separate?',
     },
     {
@@ -51,7 +51,7 @@ export class QuestionsComponent {
     {
         thumbnail: 'https://static.pexels.com/photos/262140/pexels-photo-262140.jpeg',
         category: 'About You',
-        title: "If you could cheat on your SO without repercussion would you?",
+        title: "If you could cheat without repercussion would you?",
     },
     {
         thumbnail: 'https://static.pexels.com/photos/265702/pexels-photo-265702.jpeg',

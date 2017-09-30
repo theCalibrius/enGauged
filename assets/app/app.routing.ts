@@ -11,9 +11,11 @@ import { ContentComponent } from './content.component';
 import { ActivitiesComponent } from './activities.component';
 import { QuestionsComponent } from './questions.component';
 
+
+
 const APP_ROUTES: Routes = [
-    { path: '', redirectTo: '/profile', pathMatch: 'full', canActivate: [AuthGuard] },
-    { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
+    { path: '', redirectTo: 'profile', pathMatch: 'full', canActivate: [AuthGuard] },
+    { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
     { path: 'tracker', component: TrackerComponent, canActivate: [AuthGuard] },
     { path: 'content', component: ContentComponent, canActivate: [AuthGuard] },
     { path: 'activities', component: ActivitiesComponent,  canActivate: [AuthGuard]},

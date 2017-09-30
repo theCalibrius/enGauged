@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { CategorySelectorComponent } from './categorySelector.component';
 
+
+
+
 @Component({
   selector: 'tracker-component',
   templateUrl: './tracker.component.html',
@@ -12,3 +15,4 @@ export class TrackerComponent {
 	pageName = 'tracker';
 
 }
+

@@ -17,7 +17,7 @@ export class CategorySelectorComponent implements OnInit{
     tracker: ['Peter', 'Paul', 'Mary', 'All'],
     content: ['Recommended', 'Basics', 'Communication', 'All'],
     activities: ['Recommended', 'Dates', 'Conversations', 'All'],
-    questions: ['About You', 'About Relationship', 'About Partner', 'All']
+    questions: ['About You', 'About Relationship', 'About Partner']
   };
 
   category = this.categories[this.page][0];

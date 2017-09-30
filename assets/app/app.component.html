@@ -1,4 +1,7 @@
+
+
 <div class="container">
+<app-logout *ngIf="isLoggedIn()"></app-logout>
 <div style="text-align:center">
   <app-header *ngIf="isLoggedIn()"></app-header>
 <router-outlet></router-outlet>
