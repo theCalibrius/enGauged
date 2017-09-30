@@ -30,6 +30,9 @@ import { CategoryFilterPipe } from './filter-by-category.pipe';
 import { CategoryNameDirective } from './categoryName.directive';
 import { ActivitiesComponent } from './activities.component';
 import { ActivitiesPageContentComponent  } from './activitiesPageContent.component';
+import { QuestionComponent} from './question.component';
+import { QuestionsComponent} from './questions.component';
+
 
 
 
@@ -56,7 +59,9 @@ import { ActivitiesPageContentComponent  } from './activitiesPageContent.compone
         CategoryFilterPipe,
         CategoryNameDirective,
         ActivitiesComponent,
-        ActivitiesPageContentComponent
+        ActivitiesPageContentComponent,
+        QuestionComponent,
+        QuestionsComponent
     ],
     imports: [
         BrowserModule,

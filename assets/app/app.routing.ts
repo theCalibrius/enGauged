@@ -9,6 +9,7 @@ import { ProfileComponent } from "./profile.component";
 import { TrackerComponent } from './tracker.component';
 import { ContentComponent } from './content.component';
 import { ActivitiesComponent } from './activities.component';
+import { QuestionsComponent } from './questions.component';
 
 const APP_ROUTES: Routes = [
     { path: '', redirectTo: '/profile', pathMatch: 'full', canActivate: [AuthGuard] },
@@ -16,6 +17,7 @@ const APP_ROUTES: Routes = [
     { path: 'tracker', component: TrackerComponent, canActivate: [AuthGuard] },
     { path: 'content', component: ContentComponent, canActivate: [AuthGuard] },
     { path: 'activities', component: ActivitiesComponent,  canActivate: [AuthGuard]},
+    { path: 'questions', component: QuestionsComponent, canActivate: [AuthGuard]},
     { path: 'messages', component: MessagesComponent, canActivate: [AuthGuard] },
     { path: 'auth', component: AuthenticationComponent, children: AUTH_ROUTES },
     { path: 'authenticate', component: AuthenticationPageComponent }

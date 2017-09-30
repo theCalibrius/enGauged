@@ -1,0 +1,17 @@
+<div>
+  <h3>QUESTIONS COMPONENT</h3>
+  <br>
+  <category-selector [pageName]="pageName"></category-selector>
+  <router-outlet name="pageContent"></router-outlet>
+  <question-component *ngFor="let question of questions"
+  [questionLink] = "question"> </question-component>
+</div>
+
+  <!--       <div [categoryName]="categoryName" *ngFor="let questionsLink of questionsList | categoryFilter:categoryName " class="col-lg"> -->
+
+<!--
+questionComponent *ngFor='let question of questions'
+    [question]='question'
+
+
+  -->
