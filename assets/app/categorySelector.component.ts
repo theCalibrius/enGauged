@@ -14,6 +14,7 @@ export class CategorySelectorComponent implements OnInit{
   page = 'content';
 
   categories = {
+    profile: ['Relationships', 'Bio', 'Preferences', 'Account'],
     tracker: ['Peter', 'Paul', 'Mary', 'All'],
     content: ['Recommended', 'Basics', 'Communication', 'All'],
     activities: ['Recommended', 'Dates', 'Conversations', 'All'],

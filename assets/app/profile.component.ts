@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router }  from '@angular/router';
+import { CategorySelectorComponent } from './categorySelector.component';
 
 @Component({
   selector: 'profile-component',
@@ -11,29 +11,35 @@ export class ProfileComponent {
 
   pageName = 'profile';
 
-   public sections = [{
-        name: 'relationships'
-    },
-    {
-        name: 'bio'
-    },
-    {
-        name: 'preferences'
-    },
-    {
-        name: 'account',
-    }];
+  categoryName = 'relationships';
+
+   // public sections = [{
+   //      name: 'relationships'
+   //  },
+   //  {
+   //      name: 'bio'
+   //  },
+   //  {
+   //      name: 'preferences'
+   //  },
+   //  {
+   //      name: 'account',
+   //  }];
 
   pictureURL = 'https://s3-eu-west-1.amazonaws.com/video.gallereplay.com/production/user_115/dariakhoroshavina_2405201721154.jpg';
 
   name = 'Heather';
 
-  constructor(private router: Router) {
+  // constructor(private router: Router) {
     
+  // n
+
+  isCurrentCategory(testCategory) {
+  	 return this.categoryName === testCategory;
   }
 
-  handleClick(sectionName) {
-    console.log('click handler: ', sectionName);
-    // this.router.navigateByUrl(sectionName);
+  onCategoryChange(category: string) {
+    category = category.toLowerCase();
+    this.categoryName = category;
   }
 }

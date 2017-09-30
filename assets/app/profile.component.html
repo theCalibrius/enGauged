@@ -5,6 +5,26 @@
   <h3>{{name}}</h3>
   <div class=""> </div>
   <hr>
+  <category-selector (onCategoryChange)="onCategoryChange($event)" [pageName]="pageName"></category-selector>
+  <br>
+  <relationship-manager [categoryName]="categoryName" *ngIf="isCurrentCategory('relationships')"></relationship-manager>
+  <account-manager [categoryName]="categoryName" *ngIf="isCurrentCategory('account')"></account-manager>
+  <bio-manager [categoryName]="categoryName" *ngIf="isCurrentCategory('bio')"></bio-manager>
+  <preferences-manager [categoryName]="categoryName" *ngIf="isCurrentCategory('preferences')"></preferences-manager>
+
+</div>
+
+
+
+<!-- 
+
+<div>
+  <h3>PROFILE</h3>
+  <br>
+  <img src="{{pictureURL}}" class="img-circle main-profile-pic">
+  <h3>{{name}}</h3>
+  <div class=""> </div>
+  <hr>
   <div>
     <button (click)="handleClick(sections[0].name)" [pageName]="sections[0].name" class="btn btn-danger btn-sm">Relationships</button>
     <button (click)="handleClick(sections[1].name)" [pageName]="sections[1].name"class="btn btn-danger btn-sm">Bio</button>
@@ -19,3 +39,4 @@
 
 </div>
 
+ -->

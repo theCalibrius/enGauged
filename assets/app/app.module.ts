@@ -32,10 +32,13 @@ import { ActivitiesComponent } from './activities.component';
 import { ActivitiesPageContentComponent  } from './activitiesPageContent.component';
 import { QuestionContentComponent} from './questionContent.component';
 import { QuestionsComponent} from './questions.component';
-import { RelationshipsSectionComponent} from './relationshipsSection.component';
 import { TrackerVisualizationComponent} from './trackerVisualization.component';
 import { InsightsComponent} from './insights.component';
 import { NotificationsComponent} from './notifications.component';
+import { RelationshipManagerComponent} from './relationshipManager.component';
+import { AccountManagerComponent} from './accountManager.component';
+import { BioManagerComponent} from './bioManager.component';
+import { PreferencesManagerComponent} from './preferencesManager.component';
 
 
 
@@ -65,10 +68,13 @@ import { NotificationsComponent} from './notifications.component';
         ActivitiesPageContentComponent,
         QuestionContentComponent,
         QuestionsComponent,
-        RelationshipsSectionComponent,
         TrackerVisualizationComponent,
         InsightsComponent,
-        NotificationsComponent
+        NotificationsComponent,
+        RelationshipManagerComponent,
+        AccountManagerComponent,
+        BioManagerComponent,
+        PreferencesManagerComponent
         
 
     ],
