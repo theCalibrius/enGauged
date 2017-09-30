@@ -1,0 +1,23 @@
+
+	
+	<!-- <div [categoryName]="categoryName" *ngFor="let contentLink of contentList | categoryFilter:categoryName" class=""> -->
+    <!-- <img src='{{contentLink.thumbnail}}'>
+    {{contentLink.snippet}}
+    {{categoryName}} -->
+<div class="index-content">
+    <div class="container">
+        <div [categoryName]="categoryName" *ngFor="let contentLink of contentList | categoryFilter:categoryName " class="col-lg-4">
+            <div class="card">
+                <img style="width:300px" src="{{contentLink.thumbnail}}" class="thumbnail">
+                <h4>{{contentLink.title}}</h4>
+                <p>{{contentLink.snippet}}</p>
+                <a href="{{contentLink.link}}" class="blue-button">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

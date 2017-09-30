@@ -24,6 +24,11 @@ import { ProfileComponent } from './profile.component';
 import { PageNameDirective } from './header.directive';
 import { TrackerComponent } from './tracker.component';
 import { CategorySelectorComponent } from './categorySelector.component';
+import { ContentComponent } from './content.component';
+import { ContentPageContentComponent } from './contentPageContent.component';
+import { CategoryFilterPipe } from './filter-by-category.pipe';
+import { CategoryNameDirective } from './categoryName.directive';
+
 
 @NgModule({
     declarations: [
@@ -42,7 +47,11 @@ import { CategorySelectorComponent } from './categorySelector.component';
         ProfileComponent,
         PageNameDirective,
         TrackerComponent,
-        CategorySelectorComponent
+        CategorySelectorComponent,
+        ContentComponent,
+        ContentPageContentComponent,
+        CategoryFilterPipe,
+        CategoryNameDirective
     ],
     imports: [
         BrowserModule,
