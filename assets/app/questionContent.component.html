@@ -1,7 +1,7 @@
 <div class="index-questions">
     <div class="container ">
-        <div class="card jumbotron text-info">
-            <h2>{{questionLink.title}}</h2>
+        <div class="card jumbotron text-info" [categoryName]="categoryName" *ngFor="let question of questions | categoryFilter:categoryName">
+            <h2>{{question.title}}</h2>
             <hr>
 
             <div class="row">

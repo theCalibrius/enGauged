@@ -30,7 +30,7 @@ import { CategoryFilterPipe } from './filter-by-category.pipe';
 import { CategoryNameDirective } from './categoryName.directive';
 import { ActivitiesComponent } from './activities.component';
 import { ActivitiesPageContentComponent  } from './activitiesPageContent.component';
-import { QuestionComponent} from './question.component';
+import { QuestionContentComponent} from './questionContent.component';
 import { QuestionsComponent} from './questions.component';
 import { RelationshipsSectionComponent} from './relationshipsSection.component';
 import { TrackerVisualizationComponent} from './trackerVisualization.component';
@@ -63,7 +63,7 @@ import { NotificationsComponent} from './notifications.component';
         CategoryNameDirective,
         ActivitiesComponent,
         ActivitiesPageContentComponent,
-        QuestionComponent,
+        QuestionContentComponent,
         QuestionsComponent,
         RelationshipsSectionComponent,
         TrackerVisualizationComponent,

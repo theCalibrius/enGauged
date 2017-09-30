@@ -3,8 +3,7 @@
   <br>
   <category-selector (onCategoryChange)="onCategoryChange($event)" [pageName]="pageName"></category-selector>
   <router-outlet name="pageContent"></router-outlet>
-  <question-component [categoryName]="categoryName" *ngFor="let question of questions | categoryFilter:categoryName" 
-  [questionLink] = "question"> </question-component>
+  <question-content [categoryName]="categoryName"> </question-content>
 </div>
 
   <!--       <div [categoryName]="categoryName" *ngFor="let questionsLink of questionsList | categoryFilter:categoryName " class="col-lg"> -->
