@@ -1,13 +1,14 @@
 <div class="index-questions">
     <div class="container ">
-        <div class="card jumbotron text-info" [categoryName]="categoryName" *ngFor="let question of questions | categoryFilter:categoryName">
+        <div class="card jumbotron text-info" [categoryName]="categoryName" *ngFor="let question of questions | categoryFilter:categoryName, index">
             <h2>{{question.title}}</h2>
             <hr>
 
             <div class="row">
-                <button (click)="myFunc()" class="btn btn-info btn-sm">Yes</button>
-                <button (click)="myFunc()" class="btn btn-warning btn-sm">No</button>
+                <button (click)="myFunc(question)" class="btn btn-info btn-sm">Yes</button>
+                <button (click)="myFunc(question)" class="btn btn-warning btn-sm">No</button>
             </div>
         </div>
     </div>
 </div>
+

@@ -32,14 +32,19 @@ import { ActivitiesComponent } from './activities.component';
 import { ActivitiesPageContentComponent  } from './activitiesPageContent.component';
 import { QuestionContentComponent} from './questionContent.component';
 import { QuestionsComponent} from './questions.component';
+
 import { TrackerVisualizationComponent} from './trackerVisualization.component';
+import { TrackerVisualizationGoodComponent} from './trackerVisualizationGood.component';
+import { TrackerVisualizationBadComponent} from './trackerVisualizationBad.component';
+import { TrackerVisualizationNeutralComponent} from './trackerVisualizationNeutral.component';
+
 import { InsightsComponent} from './insights.component';
 import { NotificationsComponent} from './notifications.component';
 import { RelationshipManagerComponent} from './relationshipManager.component';
 import { AccountManagerComponent} from './accountManager.component';
 import { BioManagerComponent} from './bioManager.component';
 import { PreferencesManagerComponent} from './preferencesManager.component';
-
+import { RelationshipService} from './relationships/relationship.service';
 
 
 @NgModule({
@@ -69,13 +74,16 @@ import { PreferencesManagerComponent} from './preferencesManager.component';
         QuestionContentComponent,
         QuestionsComponent,
         TrackerVisualizationComponent,
+        TrackerVisualizationGoodComponent,
+        TrackerVisualizationBadComponent,
+        TrackerVisualizationNeutralComponent,
         InsightsComponent,
         NotificationsComponent,
         RelationshipManagerComponent,
         AccountManagerComponent,
         BioManagerComponent,
         PreferencesManagerComponent
-        
+
 
     ],
     imports: [
@@ -84,11 +92,11 @@ import { PreferencesManagerComponent} from './preferencesManager.component';
         routing,
         ReactiveFormsModule,
         HttpModule
-        
 
-        
+
+
     ],
-    providers: [AuthService, ErrorService, AuthGuard],
+    providers: [AuthService, ErrorService, RelationshipService, AuthGuard],
     bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+/*var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var User = require('./user');
@@ -15,4 +15,4 @@ schema.post('remove', function (message) {
     });
 });
 
-module.exports = mongoose.model('Message', schema);
+module.exports = mongoose.model('Message', schema);*/

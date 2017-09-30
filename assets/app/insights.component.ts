@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { RelationshipService } from './relationships/relationship.service';
 
 @Component({
   selector: 'relationship-insights',
@@ -7,8 +8,17 @@ import { Component } from '@angular/core';
 })
 
 export class InsightsComponent {
-
+  	// @Input() insightArray: any[];
+    // @Input() insightsArray : string[];
 	pageName = 'tracker';
 
-}
+    get relationships() {
+    return this.relationshipService.relationships;
+ }
+
+ constructor(public relationshipService: RelationshipService) { }
+
+ }
+
+
 

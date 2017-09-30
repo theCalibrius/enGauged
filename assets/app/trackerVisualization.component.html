@@ -1,1 +1,14 @@
-<h4>---THIS IS WHERE VISUALIZATION GOES---</h4>
+
+<h4>RELATIONSHIP HEALTH</h4>
+
+
+<!-- <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+        Could Use Some Work
+    </div>
+</div>
+ -->
+  <br>
+  <trackerVisualizationNeutral [categoryName]="categoryName" *ngIf="isCurrentCategory('sarah')"></trackerVisualizationNeutral>
+  <trackerVisualizationBad [categoryName]="categoryName" *ngIf="isCurrentCategory('joe')"></trackerVisualizationBad>
+  <trackerVisualizationGood [categoryName]="categoryName" *ngIf="isCurrentCategory('mom')"></trackerVisualizationGood>

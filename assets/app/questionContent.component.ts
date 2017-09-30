@@ -1,6 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { CategoryFilterPipe } from './filter-by-category.pipe';
 
+
+
+
 @Component({
   selector: 'question-content',
   templateUrl: './questionContent.component.html',
@@ -8,15 +11,16 @@ import { CategoryFilterPipe } from './filter-by-category.pipe';
 })
 
 export class QuestionContentComponent {
-
 // @Input() questionLink: object;
 
 @Input() categoryName: string;
 
 questions = [{
+
         thumbnail: 'https://static.pexels.com/photos/40748/ghosts-gespenter-spooky-horror-40748.jpeg',
         category: 'about you',
         title: 'Do you like Horror Movies?',
+
     },
     {
         thumbnail: 'https://static.pexels.com/photos/220444/pexels-photo-220444.jpeg',
@@ -60,15 +64,18 @@ questions = [{
         title: "Do You Trust Your Partner?",
     }
     ];
- 
 
   // ngOnInit(){
-
   // }
 
-  myFunc(){
-    alert("SUCCESS: function triggered");
+  myFunc(question){
+   var temp = [];
+   this.questions.forEach(function(item, index){
+      if(item.title !== question.title){
+       temp.push(item)
+      }
+    })
+  this.questions = temp
   }
-
 
 }
