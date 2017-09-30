@@ -1,9 +1,9 @@
 <div>
-  <h3>QUESTIONS COMPONENT</h3>
+  <h3>QUESTIONS</h3>
   <br>
-  <category-selector [pageName]="pageName"></category-selector>
+  <category-selector (onCategoryChange)="onCategoryChange($event)" [pageName]="pageName"></category-selector>
   <router-outlet name="pageContent"></router-outlet>
-  <question-component *ngFor="let question of questions"
+  <question-component [categoryName]="categoryName" *ngFor="let question of questions | categoryFilter:categoryName" 
   [questionLink] = "question"> </question-component>
 </div>
 

@@ -33,7 +33,9 @@ import { ActivitiesPageContentComponent  } from './activitiesPageContent.compone
 import { QuestionComponent} from './question.component';
 import { QuestionsComponent} from './questions.component';
 import { RelationshipsSectionComponent} from './relationshipsSection.component';
-
+import { TrackerVisualizationComponent} from './trackerVisualization.component';
+import { InsightsComponent} from './insights.component';
+import { NotificationsComponent} from './notifications.component';
 
 
 
@@ -63,7 +65,10 @@ import { RelationshipsSectionComponent} from './relationshipsSection.component';
         ActivitiesPageContentComponent,
         QuestionComponent,
         QuestionsComponent,
-        RelationshipsSectionComponent
+        RelationshipsSectionComponent,
+        TrackerVisualizationComponent,
+        InsightsComponent,
+        NotificationsComponent
         
 
     ],
