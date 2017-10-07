@@ -18,10 +18,10 @@ The app monitors the current health of a relationship and makes predictions as t
 ## Table of Contents
 ----------------------------------------------------
 
-1. [Usage](#Usage)
+1. [Usage](#usage)
 2. [Requirements](#requirements)
-3. [Proposed Feature List](#proposed)
-3. [Recommended Resources](#proposed)
+3. [Proposed Feature List](#proposed-feature-list)
+3. [Recommended Resources](#recommended-resources)
 
 ----------------------------------------------------
 #Usage
