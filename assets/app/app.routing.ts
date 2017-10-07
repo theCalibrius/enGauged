@@ -1,15 +1,14 @@
 import { Routes, RouterModule } from "@angular/router";
 
-import { MessagesComponent } from "./messages/messages.component";
 import { AuthenticationComponent } from "./auth/authentication.component";
 import { AUTH_ROUTES } from "./auth/auth.routes";
 import { AuthGuard } from "./auth/auth-guard.service";
-import { AuthenticationPageComponent } from "./auth/authenticationPage.component";
-import { ProfileComponent } from "./profile.component";
-import { TrackerComponent } from './tracker.component';
-import { ContentComponent } from './content.component';
-import { ActivitiesComponent } from './activities.component';
-import { QuestionsComponent } from './questions.component';
+// import { AuthenticationPageComponent } from "./auth/authenticationPage.component";
+import { ProfileComponent } from "./profile/profile.component";
+import { TrackerComponent } from './tracker/tracker.component';
+import { ContentComponent } from './content/content.component';
+import { ActivitiesComponent } from './activities/activities.component';
+import { QuestionsComponent } from './questions/questions.component';
 
 
 
@@ -20,9 +19,11 @@ const APP_ROUTES: Routes = [
     { path: 'content', component: ContentComponent, canActivate: [AuthGuard] },
     { path: 'activities', component: ActivitiesComponent,  canActivate: [AuthGuard]},
     { path: 'questions', component: QuestionsComponent, canActivate: [AuthGuard]},
-    { path: 'messages', component: MessagesComponent, canActivate: [AuthGuard] },
-    { path: 'auth', component: AuthenticationComponent, children: AUTH_ROUTES },
-    { path: 'authenticate', component: AuthenticationPageComponent }
+    { path: 'auth', component: AuthenticationComponent, children: AUTH_ROUTES }
+  
 ];
 
 export const routing = RouterModule.forRoot(APP_ROUTES);
+
+// Once a user is authenticated, they are directed first to the profile page, since the 
+// root path redirects to the profile page.

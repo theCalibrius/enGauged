@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CategorySelectorComponent } from './categorySelector.component';
+import { CategorySelectorComponent } from '../categorySelector/categorySelector.component';
 
 // import { RelationshipService } from './relationships/relationship.service';
 // import { Relationship } from './relationships/relationship.model';
@@ -9,7 +9,7 @@ import { CategorySelectorComponent } from './categorySelector.component';
 @Component({
   selector: 'tracker-component',
   templateUrl: './tracker.component.html',
-  styleUrls: ['./views.styles.css']
+  styleUrls: ['../views.styles.css']
 })
 
 export class TrackerComponent {

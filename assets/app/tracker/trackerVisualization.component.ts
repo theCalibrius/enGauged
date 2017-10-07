@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CategoryFilterPipe } from './filter-by-category.pipe';
+import { CategoryFilterPipe } from '../categorySelector/filter-by-category.pipe';
 
 @Component({
   selector: 'tracker-visualization',

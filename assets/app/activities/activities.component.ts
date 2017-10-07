@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { CategorySelectorComponent } from './categorySelector.component';
+import { CategorySelectorComponent } from '../categorySelector/categorySelector.component';
 import { ActivitiesPageContentComponent  } from './activitiesPageContent.component';
 
 
 @Component({
   selector: 'activities-component',
   templateUrl: './activities.component.html',
-  styleUrls: ['./views.styles.css']
+  styleUrls: ['../views.styles.css']
 })
 
 export class ActivitiesComponent {

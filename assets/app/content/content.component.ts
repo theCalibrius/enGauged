@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { CategorySelectorComponent } from './categorySelector.component';
+import { CategorySelectorComponent } from '../categorySelector/categorySelector.component';
 import { ContentPageContentComponent } from './contentPageContent.component';
 
 
 @Component({
   selector: 'content-component',
   templateUrl: './content.component.html',
-  styleUrls: ['./views.styles.css']
+  styleUrls: ['../views.styles.css']
 })
 
 export class ContentComponent {

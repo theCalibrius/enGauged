@@ -1,3 +1,5 @@
+// This service handles all the authentication HTTP calls
+
 import { Injectable } from "@angular/core";
 import { Http, Headers, Response } from "@angular/http";
 import 'rxjs/Rx';

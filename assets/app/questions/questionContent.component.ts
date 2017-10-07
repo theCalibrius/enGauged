@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CategoryFilterPipe } from './filter-by-category.pipe';
+import { CategoryFilterPipe } from '../categorySelector/filter-by-category.pipe';
 
 
 
@@ -7,7 +7,7 @@ import { CategoryFilterPipe } from './filter-by-category.pipe';
 @Component({
   selector: 'question-content',
   templateUrl: './questionContent.component.html',
-  styleUrls: ['./views.styles.css']
+  styleUrls: ['../views.styles.css']
 })
 
 export class QuestionContentComponent {

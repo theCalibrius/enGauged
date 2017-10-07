@@ -44,6 +44,7 @@ app.use(function (req, res, next) {
     next();
 });
 
+
 app.use('/user', userRoutes);
 app.use('/', appRoutes);
 

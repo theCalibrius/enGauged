@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { CategoryFilterPipe } from './filter-by-category.pipe';
+import { CategoryFilterPipe } from '../categorySelector/filter-by-category.pipe';
 
 @Component({
   selector: 'activities-page-content-component',
   templateUrl: './activitiesPageContent.component.html',
-  styleUrls: ['./views.styles.css']
+  styleUrls: ['../views.styles.css']
 })
 
 export class ActivitiesPageContentComponent {

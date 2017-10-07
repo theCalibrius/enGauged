@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CategorySelectorComponent } from './categorySelector.component';
+import { CategorySelectorComponent } from '../categorySelector/categorySelector.component';
 
 @Component({
   selector: 'profile-component',
   templateUrl: './profile.component.html',
-  styleUrls: ['./views.styles.css']
+  styleUrls: ['../views.styles.css']
 })
 
 export class ProfileComponent {
