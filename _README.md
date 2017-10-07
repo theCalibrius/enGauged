@@ -24,6 +24,9 @@
 
 ## Usage
 
+Here is a step-by-step guide on how the base files of this project were set up:
+https://docs.google.com/document/d/1gzaNpNx7oqeqkYrexrr2sQDFHiA0d4qq5vFWIQNLfX4/edit?usp=sharing
+
  First Run:  npm install
  Then Run:   npm run build
  Then Run:   npm run build:prod
