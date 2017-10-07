@@ -3,7 +3,7 @@
 ----------------------------------------------------
 Project Description:
 
-This app helps people have better relaitonships.  Relationships are hard, you have a busy life.  The app keeps track of the things you can’t and makes intelligent recommendations that help you have better relationships. 
+This app helps people have better relationships.  Relationships are hard, you have a busy life.  The app keeps track of the things you can’t and makes intelligent recommendations that help you have better relationships. 
 
 The app monitors the current health of a relationship and makes predictions as to its trajectory.  Through consistent user input (on both side of the relationship), activity tracking, and big data analysis (across our user base), identifies common antipatterns and trends in your relationships that have an adverse effect and suggests actions and content in order to help steer the relationship towards success.
 
